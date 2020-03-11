@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	log.Print("Hello world received a request.")
 	target := os.Getenv("TARGET")
 	if target == "" {
-		target = "World Powered By GitHub Actions ;)"
+		target = "World Powered By GitHub Actions and image comming from github packages)"
 	}
 	fmt.Fprintf(w, "Hello %s!\n", target)
 }
